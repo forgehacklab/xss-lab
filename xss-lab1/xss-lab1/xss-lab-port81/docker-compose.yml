@@ -1,0 +1,9 @@
+services:
+  xss-lab:
+    build: .
+    container_name: xss_lab
+    ports:
+      - "81:80"
+    volumes:
+      - ./app:/var/www/html
+      - ./db:/var/www/html/db
